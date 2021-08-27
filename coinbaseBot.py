@@ -24,9 +24,9 @@ class CoinbaseExchangeAuth(AuthBase):
         return request
 
 api_url = 'https://api.pro.coinbase.com/'
-API_KEY = "574d0e429c7b0c77601d9ddec7da1eea"
-API_SECRET = "UGSd5ZZ+iZ1yqFN9WKCqPI3SoQEbIExas5nlWJa9kKw/jkHkwxZhKvN9U91qnItCiHKuSP2Mv+KoefQnenVMCQ=="
-API_PASS = "a0p1qyqxo2c"
+API_KEY = "12af0ed42d93ef00c6c996ed3b9b727c"
+API_SECRET = "PWyyZpb4atig2+EmPaopHswPiRLyBe4GOLx5UTZ5ERD2q7IrnS/+TPwB8XkPFtjygIVaSTHEswa3FXfDoa+j6w=="
+API_PASS = "tqwcvgf58j"
 auth = CoinbaseExchangeAuth(API_KEY, API_SECRET,  API_PASS)
 
 r = requests.get(api_url + 'accounts', auth=auth)
